@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.4s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Navbar section */
+
+.nav {
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+}
+
+.nav div.logo {
+  width: 180px;
+  height: 10px;
+  position: absolute;
+}
+
+.nav div.logo a {
+  text-decoration: none;
+  color: #ffe92c;
+  font-weight: bolder;
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+/* .nav div.logo a:hover {
+  color: #c0c0c0;
+} */
+
+.nav div.main_list {
+  width: 600px;
+  height: 65px;
+  float: right;
+}
+
+.nav div.main_list ul {
+  width: 100%;
+  height: 565px;
+  display: flex;
+  list-style: none;
+}
+
+.nav div.main_list ul li {
+  width: 120px;
+  height: 65px;
+}
+
+.nav div.main_list ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 65px;
+  text-transform: uppercase;
+}
+
+.nav div.main_list ul li a:hover {
+  color: #998d8d;
+}
+
+.nav div.media_button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  position: absolute;
+  right: 15px;
+  top: 12px;
+  display: none;
+}
+
+.nav div.media_button button.main_media_button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.nav div.media_button button.main_media_button span {
+  width: 98%;
+  height: 1px;
+  display: block;
+  background-color: #fff;
+  margin-top: 9px;
+  margin-bottom: 10px;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(1) {
+  transform: rotateY(180deg);
+  transition: all 0.5s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(2) {
+  transform: rotateY(180deg);
+  transition: all 0.4s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.main_media_button:hover span:nth-of-type(3) {
+  transform: rotateY(180deg);
+  transition: all 0.3s;
+  background-color: #c0c0c0;
+}
+
+.nav div.media_button button.active span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active span:nth-of-type(2) {
+  display: none;
+}
+
+.nav div.media_button button.active span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -45deg);
+  position: absolute;
+  margin: 0;
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(1) {
+  transform: rotate3d(0, 0, 1, 20deg);
+}
+
+.nav div.media_button button.active:hover span:nth-of-type(3) {
+  transform: rotate3d(0, 0, 1, -20deg);
+}
+
+/* Home section */
+
+.home {
+  padding-top: 5rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #ddd;
+}
+
+/* Medai qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0;
+  }
+
+  .nav div.logo {
+    margin-left: 15px;
+  }
+
+  .nav div.main_list {
+    width: 100%;
+    margin-top: 65px;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  .nav div.show_list {
+    height: 275px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav div.show_list {
+      height: 600px;
+    }
+  }
+
+  .nav div.main_list ul {
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    top: 80px;
+    right: 0;
+    left: 0;
+  }
+
+  .nav div.main_list ul li {
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav div.main_list ul li a {
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    display: table;
+  }
+
+  .nav div.media_button {
+    display: block;
+  }
+}
+
+/* HEADER CSS */
+header {
+  padding-top: 5rem;
+}
+/* .founderVideo{
+    background: url(./assets//picBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 263px;
+} */
+
+.playbutton {
+  position: absolute;
+  height: 5rem;
+  top: 52%;
+  left: 41%;
+}
+.founderVideo .founderimg {
+  display: flex;
+  margin: auto;
+  width: 21rem;
+  border-radius: 3rem;
+  filter: blur(2px);
+  /* opacity: 0.2; */
+}
+.offering {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(148, 233, 252);
+
+
+}
+.resumeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resumeContainer h2,
+.connection h2,
+.branding h2,
+.profileManagement h2,
+.PresentationTools h2,
+.Benefits h2, .membership h2 {
+  border-bottom: 2px solid rgb(70, 69, 69);
+  text-align: center;
+  width: fit-content;
+}
+.headH2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resumeContainer ul {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.resumeBtn button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  width: 10rem;
+  height: 2.2rem;
+  font-weight: bold;
+  background-color: rgb(226, 192, 0);
+  border-radius: 5px;
+  border: none;
+}
+.resumeBtn button:hover {
+  border: 3px solid #ffe92c;
+  background-color: whitesmoke;
+}
+
+.connection,
+.branding,
+.PresentationTools , .Benefits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.connection ul {
+  padding-left: 2rem;
+  font-size: 1.1rem;
+}
+
+/* BRANDING CSS */
+
+.brandingText p {
+  font-size: 1.1rem;
+  margin: 0.9rem;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.icon1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%);
+  width: 8rem;
+  height: 5rem;
+  text-align: center;
+}
+.icon1 img {
+  width: 3rem;
+  align-self: center;
+}
+.Benefits ul{
+    list-style: decimal;
+    font-size: 1.2rem;
+}
+
+.membership .ancurTag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: #060000;
+}
+.membership .ancurTag a{
+    /* color: aquamarine; */
+    color: #060000;
+}
