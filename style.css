@@ -214,29 +214,26 @@
 
 /* HEADER CSS */
 header {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
-/* .founderVideo{
-    background: url(./assets//picBG.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
-    width: 263px;
-} */
 
 .playbutton {
   position: absolute;
   height: 5rem;
   top: 52%;
-  left: 41%;
+  left: 40%;
 }
 .founderVideo .founderimg {
   display: flex;
   margin: auto;
-  width: 21rem;
   border-radius: 3rem;
   filter: blur(2px);
   /* opacity: 0.2; */
+}
+
+.founderimg{
+  width: 19rem;
+height: 16rem;
 }
 .offering {
   height: 25vh;
@@ -245,8 +242,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: rgb(148, 233, 252);
-
-
 }
 .resumeContainer {
   display: flex;
@@ -259,7 +254,8 @@ header {
 .branding h2,
 .profileManagement h2,
 .PresentationTools h2,
-.Benefits h2, .membership h2 {
+.Benefits h2,
+.membership h2 {
   border-bottom: 2px solid rgb(70, 69, 69);
   text-align: center;
   width: fit-content;
@@ -294,7 +290,8 @@ header {
 
 .connection,
 .branding,
-.PresentationTools , .Benefits {
+.PresentationTools,
+.Benefits {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,21 +332,21 @@ header {
   width: 3rem;
   align-self: center;
 }
-.Benefits ul{
-    list-style: decimal;
-    font-size: 1.2rem;
+.Benefits ul {
+  list-style: decimal;
+  font-size: 1.2rem;
 }
 
-.membership .ancurTag{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 1.2rem;
-    color: #060000;
+.membership .ancurTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  color: #060000;
 }
-.membership .ancurTag a{
-    /* color: aquamarine; */
-    color: #060000;
+.membership .ancurTag a {
+  /* color: aquamarine; */
+  color: #060000;
 }
