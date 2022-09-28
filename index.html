@@ -68,9 +68,9 @@
         <li>Competency and Accomplisment oriented</li>
       </ul>
       <div class="resumeBtn">
-        <button>Our process</button>
-        <button>View samples</button>
-        <button>Free consultation</button>
+        <button>Our Process</button>
+        <button>View Samples</button>
+        <button>Free Consultation</button>
       </div>
     </div>
     <div class="connection">
@@ -81,7 +81,7 @@
         <li>Biography for multiple medium</li>
       </ul>
       <div class="resumeBtn">
-        <button>submission form</button>
+        <button>Submission</button>
       </div>
     </div>
 
@@ -99,7 +99,7 @@
         </p>
       </div>
       <div class="resumeBtn">
-        <button>Register</button>
+        <button>Submission</button>
       </div>
     </div>
     <div class="profileManagement">
@@ -122,7 +122,7 @@
           </div>
           <div class="icon1">
             <img src="./assets/youtube_logo.png" alt="" />
-            <p>You tube video</p>
+            <p>Youtube video</p>
           </div>
         </div>
       </div>
@@ -150,19 +150,20 @@
     <div class="membership">
       <div class="headH2"><h2>Our Pricing</h2></div>
       <div class="ancurTag">
-        <button id="btn" href="">Basic</button
-        ><button id="btn" href="">Premium</button>
+        <button id="basic" onclick="basicFunc()">Basic</button>
+        <button id="Premiumbtn" onclick="premium()">Premium</button>
       </div>
-      <div class="youWillGet">
+      <div class="youWillGet" id="show">
         <h4>You will Get</h4>
-
         <p>Resume</p>
         <p>Cover letter</p>
         <p>Network card</p>
-        <span>Price just only <del>25,000rs</del> 15,999 Rupees</span>
+        <p id="hidden">Linkedin profile writing</p>
+        <span id="price">Price just 15,999 Rupees</span>
         <button id="buy">Buy now</button>
       </div>
     </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

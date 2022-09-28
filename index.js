@@ -8,44 +8,23 @@ mediaButton.onclick = function () {
   mediaButton.classList.toggle("active");
 };
 
+const basic = document.getElementById("basic");
+const premiumbtn = document.getElementById("Premiumbtn");
+basic.style.backgroundColor = "aquamarine";
 
+const hide = document.getElementById("hidden");
+const price = document.getElementById("price");
+hide.style.display = "none";
+function basicFunc() {
+  hide.style.display = "none";
+  price.innerText = "Price just 15,999 Rupees";
+  basic.style.backgroundColor = "gray";
+  premiumbtn.style.backgroundColor = "aquamarine";
+}
 
-$(document).ready(function () {
-  var owl = $(".owl-carousel");
-  owl.owlCarousel({
-    items: 4,
-    loop: true,
-    margin: 10,
-    autoplay: false,
-    autoplayTimeout: 1000,
-    autoplayHoverPause: false
-  });
-  $(".play").on("click", function () {
-    owl.trigger("play.owl.autoplay", [1000]);
-  });
-  $(".stop").on("click", function () {
-    owl.trigger("stop.owl.autoplay");
-  });
-});
-
-
-
-
-
-const btn = document.getElementById('btn');
-
-btn.addEventListener('click', () => {
-  // btn.preventDefault()
-  const form = document.getElementById('form');
-
-  if (form.style.display === 'none') {
-    // 👇️ this SHOWS the form
-    form.style.display = 'block';
-  } else {
-    // 👇️ this HIDES the form
-    form.style.display = 'none';
-  }
-});
-
-
-
+function premium() {
+  price.innerText = "Price just 19,999 Rupees";
+  basic.style.backgroundColor = "aquamarine";
+  premiumbtn.style.backgroundColor = "gray";
+  hide.style.display = "block";
+}
