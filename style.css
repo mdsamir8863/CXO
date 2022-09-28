@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* transition: all 0.4s; */
+  transition: all 0.4s;
+  scroll-behavior: smooth;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -347,6 +348,7 @@ header {
   border-radius: 1rem;
   border: none;
   margin: .5rem 1.5rem;
+  padding: 1rem 0;
 }
 .membership .ancurTag {
   display: flex;
@@ -395,7 +397,36 @@ header {
   background-color: whitesmoke;
 }
 
-/* CAREER CSS */
-/* ABOUT US CSS*/
-/* PROSESS */
-/* OUR TEAM */
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes slideInUp {
+  0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
