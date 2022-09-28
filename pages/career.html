@@ -39,24 +39,24 @@
     <div class="creerCointainer">
       <form action="" method="post" class="Form">
         <label for="name">Full name</label>
-        <input placeholder="Full name" type="text" id="name">
+        <input autocomplete="off" placeholder="Full name" type="text" id="name">
         <label for="name">Email id</label>
-        <input placeholder="Email id" type="email" id="name">
+        <input autocomplete="off" placeholder="Email id" type="email" id="name">
         <label for="name">Phone Number</label>
-        <input placeholder="Phone Number" type="text" id="name">
+        <input autocomplete="off" placeholder="Phone Number" type="number" id="name">
         <div class="gender">
           <p>Gender:</p>
           <label for="Gender1">M</label>
-          <input type="radio" name="Gender" id="Gender1">
+          <input autocomplete="off" type="radio" name="Gender" id="Gender1">
           <label for="Gender2">F</label>
-          <input type="radio" name="Gender" id="Gender2">
+          <input autocomplete="off" type="radio" name="Gender" id="Gender2">
           <label for="Gender3">Other</label>
-          <input type="radio" name="Gender" id="Gender3">
+          <input autocomplete="off" type="radio" name="Gender" id="Gender3">
         </div>
         <label for="name">Your location</label>
-        <input placeholder="Your location" type="text" id="name">
+        <input autocomplete="off" placeholder="Your location" type="text" id="name">
         <label for="name">Total experience</label>
-        <input placeholder="Total experience(in years)" type="email" id="name">
+        <input autocomplete="off" placeholder="Total experience(in years)" type="email" id="name">
         <label for="name">Select your Role</label>
         <select name="" id="">
           <option value="Photoshop">Photoshop</option>
@@ -66,6 +66,10 @@
           <option value="Music composer">Music composer</option>
           <option value="Web Developer">Web Developer</option>
         </select>
+        <label for="resume">Upload Resume</label>
+        <input type="file" name="" id="resume">
+        <p>Additional information</p>
+        <textarea name="" id="" cols="20" rows="3" placeholder="Brief About Yourself"></textarea>
         <div class="resumeBtn margin">
           <button>Apply</button>
         </div>
@@ -73,7 +77,7 @@
     </div>
      
       </section>
-    <button class="backBtn"><a href="../index.html">back</a></button>
+    <!-- <button class="backBtn"><a href="../index.html">back</a></button> -->
     <script src="../index.js"></script>
   </body>
 </html>
