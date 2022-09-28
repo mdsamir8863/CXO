@@ -144,8 +144,6 @@
 
 /* Home section */
 
-
-
 /* Medai qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -282,10 +280,9 @@ header {
   border-radius: 5px;
   border: none;
 }
-.resumeBtn button a{
+.resumeBtn button a {
   text-decoration: none;
   color: #000306;
-
 }
 .resumeBtn button:hover {
   border: 3px solid #ffe92c;
@@ -329,7 +326,11 @@ header {
   background-color: #ffffff;
   border-radius: 1rem;
   margin: 1rem 0rem;
-  box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%);
+  /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  -moz-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+
   width: 8rem;
   height: 5rem;
   text-align: center;
@@ -344,10 +345,13 @@ header {
 }
 .membership {
   box-sizing: border-box;
-  box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%);
+  /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+-moz-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
   border-radius: 1rem;
   border: none;
-  margin: .5rem 1.5rem;
+  margin: 0.5rem 1.5rem;
   padding: 1rem 0;
 }
 .membership .ancurTag {
@@ -367,7 +371,10 @@ header {
   border: none;
   padding: 0.5rem 1.7rem;
   border-radius: 1rem;
-  box-shadow: 1px 5px 65px -4px rgb(0 0 0 / 69%);
+  /* box-shadow: 1px 5px 65px -4px rgb(0 0 0 / 69%); */
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+-moz-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
 }
 .youWillGet {
   /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
@@ -389,7 +396,8 @@ header {
   background-color: rgb(226, 192, 0);
   border-radius: 8px;
   border: none;
-  box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%);
+  /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
+
 }
 
 .youWillGet button:hover {
@@ -406,6 +414,10 @@ header {
   transform: translateY(150px);
   opacity: 0;
   transition: 1s all ease;
+}
+button {
+  border: none;
+  outline: none;
 }
 
 @-webkit-keyframes slideInUp {
