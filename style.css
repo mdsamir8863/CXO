@@ -346,9 +346,9 @@ header {
 .membership {
   box-sizing: border-box;
   /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
-  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
--moz-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  -moz-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
   border-radius: 1rem;
   border: none;
   margin: 0.5rem 1.5rem;
@@ -372,9 +372,9 @@ box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
   padding: 0.5rem 1.7rem;
   border-radius: 1rem;
   /* box-shadow: 1px 5px 65px -4px rgb(0 0 0 / 69%); */
-  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
--moz-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
-box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
+  -webkit-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  -moz-box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
+  box-shadow: inset 0px 0px 5px 5px rgba(204, 194, 204, 1);
 }
 .youWillGet {
   /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
@@ -397,7 +397,6 @@ box-shadow: inset 0px 0px 5px 5px rgba(204,194,204,1);
   border-radius: 8px;
   border: none;
   /* box-shadow: 0px 0px 26px -4px rgb(0 0 0 / 69%); */
-
 }
 
 .youWillGet button:hover {
@@ -420,7 +419,73 @@ button {
   outline: none;
 }
 
-@-webkit-keyframes slideInUp {
+/* FOOOTER CSS */
+footer {
+  background-color: black;
+  padding: 1rem;
+}
+.logoAndArrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logoAndArrow img {
+  height: 3rem;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.span1 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: white;
+}
+.span2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ffe92c;
+}
+.fooText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+.fooText a {
+  text-decoration: none;
+  color: white;
+}
+.fooIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.iconImg {
+  width: 2rem;
+}
+.newsletters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid white;
+  margin: 1rem;
+  padding: 1rem;
+}
+.newsletters input {
+ padding: .5rem;
+  background-color: rgb(255, 255, 255);
+  outline: none;
+  border-radius: 1rem;
+}
+.newsletters span{
+  text-decoration: none;
+  color: #ffffff;
+
+
+}
+/* FOOTER CSS END */
+/* @-webkit-keyframes slideInUp {
   0% {
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
@@ -441,4 +506,4 @@ button {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-}
+} */

@@ -21,7 +21,6 @@ function basicFunc() {
   basic.style.backgroundColor = "aquamarine";
   // premiumbtn.style.backgroundColor = "rgb(127, 165, 255)";
   premiumbtn.style.backgroundColor = "white";
-
 }
 
 function premium() {
@@ -30,28 +29,37 @@ function premium() {
   basic.style.backgroundColor = "white";
   hide.style.display = "block";
   premiumbtn.style.backgroundColor = "aquamarine";
-
 }
-
-
 
 // SCRALL ANIMATION
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++){
+  for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
-    } 
-    else {
+    } else {
       reveals[i].classList.remove("active");
     }
   }
 }
 
 window.addEventListener("scroll", reveal);
+
+// const scrollWindow = function () {
+//   if (window.scrollY != 0) {
+//     setTimeout(function () {
+//       window.scrollTo(0, window.scrollY - 50);
+//       scrollWindow();
+//     }, 10);
+//   }
+const topArrow = document.getElementById("top");
+topArrow.addEventListener("click", () => {
+  document.body.scrollIntoView();
+  console.log("hello");
+});
