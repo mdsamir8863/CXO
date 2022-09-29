@@ -10,20 +10,30 @@ mediaButton.onclick = function () {
 
 const basic = document.getElementById("basic");
 const premiumbtn = document.getElementById("Premiumbtn");
-basic.style.backgroundColor = "aquamarine";
+// basic.style.backgroundColor = "aquamarine";
 
 const hide = document.getElementById("hidden");
 const price = document.getElementById("price");
-hide.style.display = "none";
+// hide.style.display = "none";
+
 function basicFunc() {
+  const hide = document.getElementById("hidden");
+  const price = document.getElementById("price");
+  const basic = document.getElementById("basic");
+  const premiumbtn = document.getElementById("Premiumbtn");
   hide.style.display = "none";
   price.innerText = "Price just 15,999 Rupees";
   basic.style.backgroundColor = "aquamarine";
   // premiumbtn.style.backgroundColor = "rgb(127, 165, 255)";
   premiumbtn.style.backgroundColor = "white";
+  console.log("hello");
 }
 
 function premium() {
+  const hide = document.getElementById("hidden");
+  const price = document.getElementById("price");
+  const basic = document.getElementById("basic");
+  const premiumbtn = document.getElementById("Premiumbtn");
   price.innerText = "Price just 19,999 Rupees";
   // basic.style.backgroundColor = "rgb(127, 165, 255)";
   basic.style.backgroundColor = "white";
@@ -51,15 +61,9 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// const scrollWindow = function () {
-//   if (window.scrollY != 0) {
-//     setTimeout(function () {
-//       window.scrollTo(0, window.scrollY - 50);
-//       scrollWindow();
-//     }, 10);
-//   }
 const topArrow = document.getElementById("top");
 topArrow.addEventListener("click", () => {
   document.body.scrollIntoView();
+
   console.log("hello");
 });

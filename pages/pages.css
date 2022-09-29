@@ -18,7 +18,7 @@ nav {
   box-shadow: 1px 5px 65px -4px rgb(10 10 10 / 69%);
   cursor: pointer;
   position: absolute;
-  bottom: -5rem;
+  bottom: -15rem;
   left: 38%;
 }
 .backBtn a {
@@ -83,4 +83,15 @@ textarea {
   background-color: #c7cbd0;
   font-size: 1.1rem;
   padding: 1rem;
+}
+.ccc{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1.1rem;
+  margin-top: 6rem;
+  padding: 1.1rem;
+  text-align: center;
 }
