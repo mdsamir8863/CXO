@@ -34,7 +34,7 @@
 
 .nav div.logo a {
   text-decoration: none;
-  color: #ffe92c;
+  color: #f4be1b;
   font-weight: bolder;
   font-size: 1.3em;
   text-transform: uppercase;
@@ -240,7 +240,7 @@ input::placeholder {
   background-color: #87bdf3;
 }
 .CAROUSELDIV:nth-child(3) {
-  background-color: #96f387;
+  background-color: #8787f3;
 }
 .CAROUSELDIV:nth-child(4) {
   background-color: #a287f3;
@@ -497,7 +497,7 @@ body {
     #fbc8e6,
     #e8e8f7,
     #ceffce,
-    #c3f8a8,
+    #9aa296,
     #9cb1b4,
     #cfc0ef,
     #dadaff,
