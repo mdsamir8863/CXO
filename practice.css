@@ -1,0 +1,68 @@
+.p {
+    z-index: 1000;
+    position: absolute;
+    display: block;
+    height: 100px;
+    width: 100px;
+    background-color: #0099ff;
+  }
+  .p p {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+  }
+  .p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: ease all 0.2s;
+  }
+  .p a:hover {
+    color: #000;
+  }
+  
+  body {
+    background: #eee;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    height: 400px;
+    margin: auto;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    max-height: 500px;
+  }
+  
+  .swiper-slide {
+    overflow: hidden;
+    font-size: 18px;
+    background: #fff;
+  }
+  .swiper-slide img {
+    opacity: 0.8;
+    width: 100%;
+  }
+  .swiper-slide img:hover {
+    opacity: 1;
+  }
+  
+  .swiper-pagination-bullet {
+    height: 13px;
+    width: 13px;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: #f7941d;
+  }

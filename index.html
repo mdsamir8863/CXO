@@ -54,145 +54,174 @@
       <input type="button" value="Go" id="GO" />
     </div>
 
-    <div class="SLIDER">
-      <div id="carousel">
-        <div
-          class="card"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1594667447546-9a7094a69663?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dXJiYW4lMjBwaG90b2dyYXBoeXxlbnwwfHwwfHw%3D&w=1000&q=80');
-          "
-        >
-          <p>Career Consulting</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1512920115544-d149d1dedcb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2l0eSUyMHN0cmVldHxlbnwwfHwwfHw%3D&w=1000&q=80');
-          "
-        >
-          <p>Online profile management</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://wallpaperaccess.com/full/6400585.jpg');
-          "
-        >
-          <p>Personal Branding</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://images.unsplash.com/photo-1583170012000-64d452012c63?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNpdHklMjBhZXN0aGV0aWN8ZW58MHx8MHx8&w=1000&q=80');
-          "
-        >
-          <p>4</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://i.pinimg.com/originals/25/7c/66/257c66c72e969ecea6e052661897ddb2.jpg');
-          "
-        >
-          <!-- <p>5</p>
-        </div>
+    <!-- carousel -->
+    <!--Setup: Add font awesome link in head-->
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous"
+      />
+    </head>
 
-        <div
-          class="card"
-          style="
-            background-image: url('https://images.pexels.com/photos/572688/pexels-photo-572688.jpeg?cs=srgb&dl=pexels-tyler-lastovich-572688.jpg&fm=jpg');
-          "
-        >
-          <p>6</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://burst.shopifycdn.com/photos/golden-autumn-leaves.jpg?width=1200&format=pjpg&exif=1&iptc=1');
-          "
-        >
-          <p>7</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/10/bluebells,_oxfordshire.jpg?fit=1500%2C1000&ssl=1');
-          "
-        >
-          <p>8</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://images.squarespace-cdn.com/content/v1/5c69df27ca525b3b56a5cce6/1553777016469-K6PBICDGY54KWX764B3Q/Redwoods-Sarah-Marino-1500px.jpg?format=1500w');
-          "
-        >
-          <p>9</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://i.guim.co.uk/img/media/18c7596e2cda2b1f2b943c938b977b59028c5f86/0_500_3915_2348/master/3915.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=3c9aaf2e827c29ee2f8114a60acc93aa');
-          "
-        >
-          <p>10</p>
-        </div>
+    <div class="carouselDiv">
+      <!--Container used to offset buttons-->
+      <div class="carousel-container">
+        <i class="fas fa-arrow-circle-right" id="nextbutton"></i>
+        <i class="fas fa-arrow-circle-left" id="prevbutton"></i>
+        <!--Container used to position images left to right-->
+        <div class="carousel-slide">
+          <!--Cloning last image for continuity-->
+          <!--         
+          <img
+          src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+            src="https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="gallery-img"
+          /> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+            src="https://images.pexels.com/photos/1382394/pexels-photo-1382394.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="gallery-img"
+          /> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+            src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="gallery-img"
+          /> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+            src="https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            class="gallery-img"
+          /> -->
 
-        <div
-          class="card"
-          style="
-            background-image: url('https://www.scubadiving.com/sites/scubadiving.com/files/images/2021/10/33-img_8985_scubadivingmagazine.septemberoctober2021.jpg');
-          "
-        >
-          <p>11</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://expertphotography.b-cdn.net/wp-content/uploads/2021/02/underwater-photographers-1.jpg');
-          "
-        >
-          <p>12</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://cdn.naturettl.com/wp-content/uploads/2018/09/22004641/Avoiding-Backscatter-underwater-photography-9-900x619.jpg');
-          "
-        >
-          <p>13</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://i.pinimg.com/736x/56/43/3e/56433e466edb4cc4c34d9f77534bac5c.jpg');
-          "
-        >
-          <p>14</p>
-        </div>
-        <div
-          class="card"
-          style="
-            background-image: url('https://img.freepik.com/premium-photo/rocks-underwater-riverbed-rivers-freshwater-underwater-crystal-clear-water-pebbles-riverbed_559531-1042.jpg');
-          "
-        > -->
-        </div>
+          <div class="CAROUSELDIV">
+            <p style="position: absolute; top: 10rem; display: block">
+              Career Consulting
+            </p>
 
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
-        <div class="card"></div>
+            <img
+              src="assets/businessman_PNG6588.png"
+              id="lastClone"
+              class="gallery-img"
+            />
+          </div>
+          <div class="CAROUSELDIV">
+            <p
+              style="
+                position: absolute;
+                top: 13rem;
+                display: block;
+                color: aliceblue;
+                background-color: black;
+                z-index: 4;
+              "
+            >
+              Career Consulting
+            </p>
+            <img src="./assets/businessman2.png" class="gallery-img" />
+          </div>
+          <div class="CAROUSELDIV">
+            <p
+              style="
+                position: absolute;
+                top: 13rem;
+                display: block;
+                color: aliceblue;
+                background-color: black;
+                z-index: 4;
+                font-size: 14px;
+              "
+            >
+              Online Profile Management
+            </p>
+            <img src="./assets/profile-M.png" class="gallery-img" />
+          </div>
+          <div class="CAROUSELDIV">
+            <p
+              style="
+                position: absolute;
+                top: 13rem;
+                display: block;
+                color: aliceblue;
+                background-color: black;
+                z-index: 4;
+              "
+            >
+              Personal Branding
+            </p>
+            <img
+              src="assets/businessman_PNG6588.png"
+              id="lastClone"
+              class="gallery-img"
+            />
+          </div>
+          <div class="CAROUSELDIV">
+            <p
+              style="
+                position: absolute;
+                top: 11rem;
+                display: block;
+                color: aliceblue;
+                background-color: black;
+                z-index: 4;
+              "
+            >
+              Personal Branding
+            </p>
+
+            <img
+              src="./assets/businessman2.png"
+              id="lastClone"
+              class="gallery-img"
+            />
+          </div>
+          <!-- <div class="CAROUSELDIV">
+            <img
+              src="https://images.pexels.com/photos/572487/pexels-photo-572487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              id="firstClone"
+              class="gallery-img"
+            />
+          </div> -->
+          <!-- <div class="CAROUSELDIV">
+            <img
+              src="assets/businessman_PNG6588.png"
+              id="lastClone"
+              class="gallery-img"
+            />
+          </div> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img">
+          <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img">
+          <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+          <!-- <img
+          src="assets/businessman_PNG6588.png"
+          id="lastClone" class="gallery-img"> -->
+        </div>
       </div>
-      <div id="pagination">
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-      </div>
-
-      <i id="leftArrow" class="arrow fa-solid fa-caret-left"></i>
-      <i id="rightArrow" class="arrow fa-solid fa-caret-right"></i>
     </div>
+
+    <!-- carousel -->
+
     <!-- <header>
       <div class="header">
         <h1>GET HIRED FASTER</h1>
@@ -281,26 +310,38 @@
         </div>
       </div>
       <div class="profileManagement aaa">
-        <div class="headH2"><h2>Social profile management</h2></div>
+        <div class="headH2">
+          <h2>Social profile management</h2>
+        </div>
         <div class="icons">
-          <div class="">
-            <div class="icon1">
-              <img src="./assets/linkedin.png" alt="" />
-              <p>linkedin</p>
+          <div class="bg">
+            <div class="icon1 box block ">
+              <!-- <img src="./assets/linkedin.png" alt="" /> -->
+              <p>Personal Website</p>
             </div>
-            <div class="icon1">
-              <img src="./assets/webIcon.png" alt="" />
-              <p>Web site</p>
+            <div class="icon1 box block ">
+              <!-- <img src="./assets/webIcon.png" alt="" /> -->
+              <p>Social profiles Linkedin, Blog, Archives.</p>
             </div>
           </div>
-          <div class="">
-            <div class="icon1">
-              <img src="./assets/videoIcon.png" alt="" />
-              <p>Video Resume</p>
+          <div class="bg">
+            <div class="icon1 box block ">
+              <!-- <img src="./assets/videoIcon.png" alt="" /> -->
+              <p>One Minute Video Resume</p>
             </div>
-            <div class="icon1">
-              <img src="./assets/youtube_logo.png" alt="" />
-              <p>Youtube video</p>
+            <div class="icon1 box block ">
+              <!-- <img src="./assets/youtube_logo.png" alt="" /> -->
+              <p>Achievements presentation Portfolio development</p>
+            </div>
+          </div>
+          <div class="bg">
+            <div class="icon1 box block">
+              <!-- <img src="./assets/videoIcon.png" alt="" /> -->
+              <p>One Minute Video Resume</p>
+            </div>
+            <div class="icon1 box block ">
+              <!-- <img src="./assets/youtube_logo.png" alt="" /> -->
+              <p>Achievements presentation Portfolio development</p>
             </div>
           </div>
         </div>
