@@ -21,7 +21,7 @@
   position: fixed;
   line-height: 65px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0 0 0 / 45%);
   z-index: 5;
   top: 0;
 }

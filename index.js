@@ -14,7 +14,7 @@ const premiumbtn = document.getElementById("Premiumbtn");
 
 const hide = document.getElementById("hidden");
 const price = document.getElementById("price");
-// hide.style.display = "none";
+hide.style.display = "none";
 
 function basicFunc() {
   const hide = document.getElementById("hidden");
