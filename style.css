@@ -212,8 +212,7 @@
   margin: 1rem;
 }
 input::placeholder {
-  font-size: 7px;
-  text-align: center;
+  font-size: 12px;
 }
 #GO {
   background-color: #f4be1b;
@@ -314,7 +313,6 @@ input::placeholder {
 
 /* HEADER CSS */
 .header {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -628,6 +626,9 @@ body {
 button {
   border: none;
   outline: none;
+}
+#hidden{
+  display: none;
 }
 
 /* FOOOTER CSS */
